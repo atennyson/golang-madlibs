@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>A Simple HTTP Server</title>
+	</head>
+	<body>
+		<form action="/greet">
+            <section>
+                <label for="name-text">What is your name?</label>
+                <input type="text" name="name" id="name-text">
+            </section>
+
+            <section>
+                 <label for="compliment-select">Select a compliment:</label>
+                 <select name="compliment" id="compliment-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="nice">nice</option>
+                    <option value="sophisticated">sophisticated</option>
+                    <option value="really cool">really cool</option>
+                    <option value="awesome">awesome</option>
+                </select>
+            </section>
+
+            <input type="submit" value="Greet me!">
+	</body>
+</html>

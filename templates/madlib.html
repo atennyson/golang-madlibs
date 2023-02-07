@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Custom Greeting</title>
+</head>
+<body>
+    <form action="/words">
+    <h1>Silly Valentine Letter</h1>
+    <h2>My dear {{.FormValue "adjective-1"}} Valentine,</h2>
+    <p>You are so {{.FormValue "adjective-2"}} and {{.FormValue "adjective-3"}}. When I see you, I feel like {{.FormValue "cereal"}}. You smell like {{.FormValue "candy-1"}}. It's not much, but I want to give you the {{.FormValue "building"}} just to show you how much I like you.</p>
+    <p>Would you like to go to {{.FormValue "planet"}} with me on Valentine's Day? There is great restaurant there. They serve {{.FormValue "cake"}} salad, {{.FormValue "candy-2"}} soup, and {{.FormValue "choclate"}} sandwhiches.</p>
+    <p>There is also fun center where kids can swim in the {{.FormValue "soda"}} pool, and all the windows like {{.FormValue "shape"}}. There is {{.FormValue "cookie"}} hockey and {{.FormValue "flavor"}} gumball bowling.</p>
+    <p>I hope you can come! It would be so {{.FormValue "adjective-4"}}!</p>
+    <p>Sincerely,</p>
+    <p>{{.FormValue "name"}}, your pet {{.FormValue "animal"}}</p>
+
+  <input type="submit" value="Again?">
+</body>
+</html>
